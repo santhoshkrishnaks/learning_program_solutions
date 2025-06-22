@@ -1,0 +1,34 @@
+Big O Notation is a way to describe how efficient an algorithm is in terms of time and space, based on the size of the input (n). It doesn’t focus on exact time but instead gives a general idea of how the algorithm’s performance scales as the input grows larger.
+
+It’s really useful when comparing algorithms because it gives us a high-level understanding of their growth rate, especially in the worst-case scenario. This helps us figure out which algorithm would be better for large inputs, without worrying about the hardware or specific runtimes.
+
+For instance:
+
+If an algorithm has a time complexity of O(n), it means the time it takes grows linearly with the input size.
+
+O(1) means it runs in constant time, no matter how big the input is.
+
+Big O is super important when dealing with large-scale problems because it helps us choose algorithms that can handle big data efficiently and scale well.
+
+Time Complexities in Search Operations
+The time it takes to search for an element depends on the algorithm used and where the element is located. Usually, we look at three cases:
+
+Best Case:
+This is when the algorithm finds the target in the shortest time possible.
+For example, in linear search, if the element is at the very beginning, it’s found immediately—O(1).
+
+Average Case:
+This is the typical case, where the element might be somewhere in the middle.
+In linear search, on average, we check about half the elements—O(n/2), which simplifies to O(n).
+
+Worst Case:
+This is when the element is either at the very end or not present at all, so the algorithm takes the longest time.
+In linear search, that means scanning the whole list—O(n).
+
+Binary Search (for sorted data):
+
+Best Case: If the target is exactly in the middle, we find it in one step—O(1).
+
+Average and Worst Cases: Since we keep cutting the list in half, it takes O(log n) steps.
+
+Understanding these cases really helps in picking the right search algorithm based on the scenario. For example, if you know the data is sorted and performance matters, binary search is a great choice. But if the data is small or changes a lot, linear search might still work just fine

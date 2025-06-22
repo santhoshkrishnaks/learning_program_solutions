@@ -1,0 +1,19 @@
+Linear Search works by going through each element one by one until it finds the target or reaches the end. It's pretty straightforward, and in the best case—if the element we're looking for is right at the beginning—it takes just one step, or O(1). But most of the time, the element is somewhere in the middle or at the end, so on average and in the worst case, it takes O(n) time, where n is the number of elements.
+
+Binary Search is different—it only works on sorted data. It keeps dividing the list in half, which cuts down the number of comparisons quickly. The best case is also O(1), when the target is exactly in the middle. But generally, both the average and worst cases are O(log n), thanks to this halving strategy.
+
+One key difference is that linear search doesn’t need the data to be sorted, while binary search does. But if the data is sorted once, we can use binary search multiple times and get much faster results.
+
+For something like an e-commerce platform, search performance is super important. Users expect instant results, even when there are thousands of products.
+
+Binary search is definitely more suitable in this case for a few reasons:
+
+High Performance: Binary search is much faster than linear search when dealing with large amounts of data. That speed is crucial as the platform grows.
+
+Sorted Data: E-commerce platforms usually sort products by name, price, or category anyway, so using binary search fits right in.
+
+Handling Big Catalogs: When you have tens of thousands of products, linear search just becomes too slow. Binary search stays efficient no matter how big the dataset gets.
+
+Better User Experience: Faster searches mean users get their results quicker, which improves the overall experience—something really important in e-commerce.
+
+That said, linear search still has its place. If the list is small, changes frequently, or isn’t sorted (like dynamic search suggestions or filters), linear search might actually be the better choice

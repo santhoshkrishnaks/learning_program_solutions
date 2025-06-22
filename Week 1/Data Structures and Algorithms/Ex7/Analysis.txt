@@ -1,0 +1,16 @@
+Time Complexity of Recursive Algorithm
+When using a recursive approach, the time complexity is O(n), where n represents the number of years into the future. That’s because the function makes one recursive call for each year, and each step depends on the result from the previous year.
+
+The logic is simple and easy to follow, but since there’s one function call per year, the total number of calls grows linearly as n increases.
+
+How to Optimize the Recursive Solution
+Even though this recursion isn’t exponential, there are still ways to make it better:
+
+1. Memoization (if needed):
+If we’re calculating the same year’s value multiple times—like in more complex versions of the problem—we can store already computed results using an array or dictionary. This helps us avoid repeating the same work and saves time.
+
+2. Convert to Iteration (Tail Recursion or Loop):
+Since each step only depends on the previous one, it’s more efficient to just use a loop. This avoids the extra space used by the recursion stack and keeps things simpler and faster in practice.
+
+Time Complexity:
+Even after optimizing, the time complexity remains O(n), but the space efficiency improves because we eliminate the need for recursive function calls.

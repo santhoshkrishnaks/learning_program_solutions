@@ -1,0 +1,4 @@
+Recursion is a technique in programming where a function calls itself to solve a smaller version of the original problem. With each call, the problem gets reduced until it reaches a base case, which is the point where the recursion stops.
+
+It’s especially useful for problems that can be broken down into smaller, similar parts—like finding factorials, generating Fibonacci numbers, or even calculating future values based on repeated growth. Recursion helps make the code cleaner and easier to understand in these kinds of scenarios.
+
